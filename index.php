@@ -47,30 +47,24 @@
                         'point_team_1' => 88,
                         'point_team_2' => 89
                     ],
-                ]; 
-
-                foreach ($matches as $array)
-                { ?>
-
-                    <?php 
-                    {
-                    ?>
+                ]; ?>
+                    <ul>
                         <?php 
-                        foreach ($array as $key => $game)
+                            foreach ($matches as $game)
                         { ?>
 
-                            <p>
-                                <?php echo $key .  $game; ?>
-                            </p>
+                            <li>
+                                <?php echo $game['team1']; ?>
+                                -
+                                <?php echo $game['team2']; ?>
+                                //
+                                <?php echo $game['point_team_1']; ?>
+                                -
+                                <?php echo $game['point_team_1']; ?>
+                            </li>
                             
                         <?php
                         };
                         ?>
-                <?php        
-                    }; 
-                ?>
-            <?php
-            };
-        ?>
     </body>
 </html>
